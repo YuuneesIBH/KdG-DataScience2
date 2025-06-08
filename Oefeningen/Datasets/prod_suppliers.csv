@@ -1,0 +1,10 @@
+p_id,supp_id,suppliername
+1,1,"Hypertek Systems"
+2,1,"Hypertek Systems"
+3,2,"informatique.nl"
+8,1,"Hypertek Systems"
+4,3,"centurytech.sg"
+5,3,"centurytech.sg"
+6,2,"informatique.nl"
+7,3,"centurytech.sg"
+
