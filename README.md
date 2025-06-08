@@ -99,16 +99,12 @@ pip install -r requirements.txt
 
 ### 🎓 Karel de Grote Hogeschool - Data Science 2
 
-**Data & AI 3 | Academiejaar 2024-2025**
+**ISB | Academiejaar 2024-2025**
 
 *Praktische Python toepassingen voor data science en machine learning*
 
-**[🌐 KdG Website](https://www.kdg.be) | [📚 Cursusmateriaal](https://kdg.be) | [💬 Discord Community](#)**
-
 ---
 
-**© 2024 Karel de Grote Hogeschool | Alle rechten voorbehouden**
-
-*Gemaakt met ❤️ voor Data Science studenten*
+**© 2025 Karel de Grote Hogeschool | Alle rechten voorbehouden**
 
 </div>
