@@ -25,3 +25,4 @@ def polynomial_regression(degree=2, **kwargs):
         PolynomialFeatures(degree=degree, include_bias=False),
         LinearRegression(**kwargs)
     )
+    

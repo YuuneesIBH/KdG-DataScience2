@@ -112,7 +112,14 @@ class GeneralRegression:
 
         self.model = make_pipeline(PolynomialFeatures(degree=self.degree, include_bias=False), LinearRegression(**self.kwargs))
         self.model.fit(self.X, self.y)
-
+# IMPORTS EN DATA PREPARATIE
+import seaborn as sns                                           # theorie: gegevens inladen (slides Python basics)
+from sklearn.model_selection import GridSearchCV, train_test_split  # theorie: cross-validatie en train/test split (slides Hyperparameters)
+from sklearn.pipeline import Pipeline                           # theorie: pipelines voor workflow (slides Hyperparameters)
+from sklearn.preprocessing import OneHotEncoder                 # theorie: categorische encoding (slides Data visualisatie)
+from sklearn.compose import ColumnTransformer                   # theorie: feature preprocessing (slides Hyperparameters)
+from sklearn.ensemble import RandomForestClassifier             # theorie: basisklas voor tuning (slides Decision Trees)
+from sklearn.metrics import classification_report               # theorie: evaluatie metrics (slides Hyperparameters)
     def predict(self, x: np.array):
         X = x.reshape(-1, 1)
 
