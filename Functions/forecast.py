@@ -85,10 +85,11 @@ from sklearn.metrics import mean_squared_error, r2_score as r2score
 
 
 class GeneralRegression:
-    def __init__(self, degree=1, exp=False, log=False):
+    def __init__(self, degree=1, exp=False, log=False, **kwargs):
         self.degree = degree
         self.exp = exp
         self.log = log
+        self.kwargs = kwargs
         self.model = None
         self.x_orig = None
         self.y_orig = None
@@ -109,7 +110,7 @@ class GeneralRegression:
         if self.log:
             self.X = np.log(self.X)
 
-        self.model = make_pipeline(PolynomialFeatures(degree=self.degree), LinearRegression())
+        self.model = make_pipeline(PolynomialFeatures(degree=self.degree, include_bias=False), LinearRegression(**self.kwargs))
         self.model.fit(self.X, self.y)
 
     def predict(self, x: np.array):
