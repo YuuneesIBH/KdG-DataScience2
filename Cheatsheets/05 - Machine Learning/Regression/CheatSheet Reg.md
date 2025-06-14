@@ -29,7 +29,7 @@ sns.heatmap(data.corr(), annot=True, cmap='coolwarm')
 >[!note]
 >Hoe 'warmer' de kleur hoe hoger de correlatie hoe harder deze afhankelijk zijn van elkaar. Dat wilt zeggen dat als we een voorspelling willen maken we best als predictor diegene nemen met de hoogste correlatie omdat die de andere het beste aanvoelt.
 
-## Model trainen voor lineaire regressie
+## Model trainen voor lineaire regressie 
 ```python
 data = pd.read_csv('../../datasets/file.csv', sep=',', decimal='.', header=None)
 

@@ -23,9 +23,9 @@ data.describe()
 type(data)
 ```
 
-## Polynomial Regression Function
+## Polynomial Regression Function (ROC) AUC
 Polynomiale Regressie kunnen we niet zomaar importeren dus hier moeten we een functie voor gebruiken (Deze is gewoon te copy pasten in de toekomst)
-
+![true](image.png)
 ```python
 def polynomial_regression(degree=2, **kwargs):  
     model = make_pipeline(PolynomialFeatures(degree, include_bias=False), LinearRegression(**kwargs))  
