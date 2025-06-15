@@ -151,3 +151,23 @@ predicted_outcome = model.predict(new_data_norm)
 print(predicted_outcome)  # Zal dan de uitkomst voorspellen, kan de accuracy zijn indien categorical of kan ook een MAPE zijn indien regression 
 ```
 - Zal bij regression een value geven die hij voorspelt en bij categorical voor iedere categorie een accuracy met de waarschijnlijkheid. Daar waar deze value het hoogste is is het waarschijnlijkst
+
+EXTRA: (andere evaluatietechnieken)
+
+### ReLU (huidige keuze) - meest gebruikt
+hidden = Dense(8, activation='relu')(norm)
+
+### Leaky ReLU - voorkomt "dying ReLU" probleem
+hidden = Dense(8, activation='leaky_relu')(norm)
+
+### ELU - Exponential Linear Unit
+hidden = Dense(8, activation='elu')(norm)
+
+### Swish/SiLU - moderne activatiefunctie
+hidden = Dense(8, activation='swish')(norm)
+
+### Tanh - klassieke functie
+hidden = Dense(8, activation='tanh')(norm)
+
+### Sigmoid - kan leiden tot vanishing gradients
+hidden = Dense(8, activation='sigmoid')(norm)
